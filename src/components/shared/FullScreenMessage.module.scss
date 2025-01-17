@@ -1,0 +1,35 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icon-heart {
+  fill: var(--red);
+  width: 60px;
+  height: 60px;
+  animation: heartbeat 1s infinite;
+}
+
+.icon-error {
+  width: 60px;
+  height: 60px;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
