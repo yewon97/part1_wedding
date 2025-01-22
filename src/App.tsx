@@ -7,6 +7,7 @@ import Video from '@components/sections/Video'
 import FullScreenMessage from '@shared/FullScreenMessage'
 
 import { Wedding } from '@models/wedding'
+import ImageGallery from '@components/sections/ImageGallery'
 
 const cx = classNames.bind(styles)
 
@@ -46,13 +47,13 @@ export default function App() {
     return null
   }
 
-  const { date } = wedding
+  const { date, galleryImages } = wedding
 
   return (
     <div className={cx('container')}>
       <Heading date={date} />
       <Video />
-      {JSON.stringify(wedding)}
+      <ImageGallery images={galleryImages} />
     </div>
   )
 }
