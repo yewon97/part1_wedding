@@ -6,4 +6,18 @@
   right: 0;
   background-color: #000;
   z-index: 9999;
+
+  .icon-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    z-index: 2;
+
+    path {
+      fill: white;
+    }
+  }
 }
