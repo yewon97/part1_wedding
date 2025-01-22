@@ -8,6 +8,7 @@ import FullScreenMessage from '@shared/FullScreenMessage'
 
 import { Wedding } from '@models/wedding'
 import ImageGallery from '@components/sections/ImageGallery'
+import Intro from '@components/sections/Intro'
 
 const cx = classNames.bind(styles)
 
@@ -47,12 +48,26 @@ export default function App() {
     return null
   }
 
-  const { date, galleryImages } = wedding
+  const {
+    date,
+    galleryImages,
+    groom,
+    bride,
+    location,
+    message: { intro },
+  } = wedding
 
   return (
     <div className={cx('container')}>
       <Heading date={date} />
       <Video />
+      <Intro
+        date={date}
+        groomName={groom.name}
+        brideName={bride.name}
+        locationName={location}
+        message={intro}
+      />
       <ImageGallery images={galleryImages} />
     </div>
   )

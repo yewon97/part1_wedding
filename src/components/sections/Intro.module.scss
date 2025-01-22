@@ -1,0 +1,36 @@
+.container {
+  text-align: center;
+  line-height: 26px;
+
+  .wrap-persons {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 1.4px;
+    font-weight: bold;
+    margin: 42px 0 8px;
+  }
+
+  .wrap-location {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .icon-heart {
+    width: 16px;
+    height: 16px;
+
+    .st0 {
+      fill: #ff5050;
+    }
+    .st1 {
+      fill: #ffffff;
+    }
+    .st2 {
+      fill: #f58989;
+    }
+  }
+}
