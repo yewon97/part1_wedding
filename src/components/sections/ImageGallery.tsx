@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import ImageViewer from '@components/ImageViewer'
 import Section from '@shared/Section'
 import classNames from 'classnames/bind'
@@ -6,6 +8,8 @@ import styles from './ImageGallery.module.scss'
 const cx = classNames.bind(styles)
 
 export default function ImageGallery({ images }: { images: string[] }) {
+  const [open, setOpen] = useState(false)
+
   return (
     <>
       <Section title="사진첩">
@@ -17,7 +21,7 @@ export default function ImageGallery({ images }: { images: string[] }) {
           ))}
         </ul>
       </Section>
-      <ImageViewer images={images} />
+      <ImageViewer images={images} open={open} />
     </>
   )
 }
