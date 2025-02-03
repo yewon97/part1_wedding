@@ -32,7 +32,9 @@ export default function Intro({
         <span>{brideName}</span>
       </div>
       <div className={cx('wrap-location')}>
-        <span>{format(parseISO(date), 'yyyy년 M월 d일', { locale: ko })}</span>
+        <span>
+          {format(parseISO(date), 'yyyy년 M월 d일 eeee', { locale: ko })}
+        </span>
         <span>{locationName.name}</span>
         <span>{locationName.address}</span>
       </div>

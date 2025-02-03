@@ -1,9 +1,9 @@
 .container {
   text-align: center;
-  line-height: 26px;
+  font-size: 2.8rem;
 
   .wrap-persons {
-    font-size: 22px;
+    font-size: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,8 +20,8 @@
   }
 
   .icon-heart {
-    width: 16px;
-    height: 16px;
+    width: 2rem;
+    height: 2rem;
 
     .st0 {
       fill: #ff5050;
