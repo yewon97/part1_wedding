@@ -9,6 +9,7 @@ import FullScreenMessage from '@shared/FullScreenMessage'
 import { Wedding } from '@models/wedding'
 import ImageGallery from '@components/sections/ImageGallery'
 import Intro from '@components/sections/Intro'
+import Invitation from '@components/sections/Invitation'
 
 const cx = classNames.bind(styles)
 
@@ -54,7 +55,7 @@ export default function App() {
     groom,
     bride,
     location,
-    message: { intro },
+    message: { intro, invitation },
   } = wedding
 
   return (
@@ -68,6 +69,7 @@ export default function App() {
         locationName={location}
         message={intro}
       />
+      <Invitation message={invitation} />
       <ImageGallery images={galleryImages} />
     </div>
   )
