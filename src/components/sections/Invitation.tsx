@@ -1,5 +1,5 @@
-import Text from '@components/shared/Text'
-import Section from '@components/shared/Section'
+import Text from '@shared/Text'
+import Section from '@shared/Section'
 import classNames from 'classnames/bind'
 import styles from './Invitation.module.scss'
 
